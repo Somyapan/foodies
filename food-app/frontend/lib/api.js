@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const api = axios.create({ baseURL: process.env.NEXT_PUBLIC_API_URL || 'https://foodies-1ls8.onrender.com' });
+const api = axios.create({ baseURL: process.env.NEXT_PUBLIC_API_URL || 'https://foodies-1ls8.onrender.com/api' });
 
 api.interceptors.request.use(config => {
   if (typeof window !== 'undefined') {
