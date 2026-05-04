@@ -6,7 +6,7 @@ const pool    = require('./config/db');
 const app = express();
 
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'https://foodies-1-fgfn.onrender.com'
+  origin: process.env.FRONTEND_URL || ''
 }));
 
 app.use(express.json());
